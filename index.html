@@ -1,0 +1,16 @@
+<title>My hero</title>
+<style>
+  body {background: rgb(21, 8, 12);}
+  div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 80vh;
+  }
+  img {max-width: 800px;width: 100%; cursor: pointer;}
+  audio {width: 100%; opacity: 0;}
+</style>
+<div><img src="jar.gif"></div>
+<audio controls autoplay><source src="jar.mp3" type="audio/mpeg"></audio>
+<script>document.querySelector('img').addEventListener('click', function() {document.querySelector('audio').play();})</script>
